@@ -1,5 +1,5 @@
 {
-  "name": "black-or-white",
+  "name": "doggify",
   "version": "1.0.0",
   "description": "A simple web app to generate black or white images.",
   "main": "script.js",
