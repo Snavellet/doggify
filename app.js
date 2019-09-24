@@ -26,6 +26,6 @@ app.get('/', (req, res) => {
 
 app.all('*', (req, res) => {
     return res.render('404');
-})
+});
 
 module.exports = app;
