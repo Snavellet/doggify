@@ -1,0 +1,72 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    title Doggify - Dog Generator
+    meta(name='twitter:description', content='A simple application to generate dog images and you can also make suggestions in the site, to improve it even further.')
+    meta(name='twitter:card', content='summary')
+    meta(name='description', content='A simple website for generating dog images, you can also make a suggestion in the site to improve it even further.')
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='assets/img/beagle-head-dog_84382-77.jpg')
+    meta(name='twitter:image', content='assets/img/beagle-head-dog_84382-77.jpg')
+    meta(name='twitter:title', content='Doggify - Dog Generator')
+    link(rel='icon', type='image/jpeg', sizes='626x626', href='assets/img/beagle-head-dog_84382-77.jpg')
+    link(rel='icon', type='image/jpeg', sizes='626x626', href='assets/img/beagle-head-dog_84382-77.jpg')
+    link(rel='icon', type='image/jpeg', sizes='626x626', href='assets/img/beagle-head-dog_84382-77.jpg')
+    link(rel='icon', type='image/jpeg', sizes='626x626', href='assets/img/beagle-head-dog_84382-77.jpg')
+    link(rel='icon', type='image/jpeg', sizes='626x626', href='assets/img/beagle-head-dog_84382-77.jpg')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css')
+    link(rel='stylesheet', href='assets/css/styles.min.css')
+    script(async='', src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+    script.
+      (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-8183025643908111",
+      enable_page_level_ads: true
+      });
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-148488256-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-148488256-1');
+  body
+    nav#navbar-dog.navbar.navbar-light.navbar-expand-md
+      .container-fluid
+        a.navbar-brand(href='#', style='font-family: Lato, sans-serif;')
+          strong Doggify
+        button.navbar-toggler(data-toggle='collapse', data-target='#navcol-1')
+          span.sr-only Toggle navigation
+          span.navbar-toggler-icon
+        #navcol-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.ml-auto(style='filter: blur(0px);margin: 0px;padding: 0px;font-family: Lato, sans-serif;')
+            li.nav-item(role='presentation')
+            li.nav-item(role='presentation')
+              a.nav-link.text-dark(href='suggestions') Suggestions
+            li.nav-item(role='presentation')
+              a.nav-link.text-dark(href='home') Home
+            li.nav-item(role='presentation')
+    #jumbo
+      .jumbotron
+        h1#title.pulse.animated Dog Generator
+        p#subtitle
+          | Click the 
+          strong button
+          |  below to generate dog images.
+        p
+        button.btn.btn-outline-success.btn-lg.text-center.visible.rubberBand.animated(type='button', style='font-family: lato;filter: blur(0px) brightness(77%);', v-on:click='getRandomDogPic', v-on:keydown.enter='getRandomDogPic') Generate
+      #generated
+        .card.text-right(src='https://wallup.net/wp-content/uploads/2018/10/06/798344-cute-baby-animal-dogs-748x1122.jpg', style='width: 500px;')
+          img.img-fluid.card-img-top.w-100.d-block(style='width: 506px;', :src='src')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js')
+    script(src='assets/js/smart-forms.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/vue')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js')
+    script(src='assets/js/script.min.js')
