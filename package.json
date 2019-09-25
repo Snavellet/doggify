@@ -4,8 +4,8 @@
   "description": "A simple web app to generate black or white images.",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "dev": "nodemon server-dog.js",
+    "start": "node server-dog.js"
   },
   "keywords": [
     "black",
