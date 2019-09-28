@@ -25,11 +25,8 @@ app.get('/', (req, res) => {
 });
 
 app.all('*', (req, res) => {
-    return res.render('404');
+    return res.redirect(`${req.protocol}://${req.get('host')}/home`);
 });
 
-app.disable('x-powered-by');
-
-app.disable('server');
 
 module.exports = app;
