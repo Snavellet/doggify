@@ -28,5 +28,13 @@ app.all('*', (req, res) => {
     return res.redirect(`${req.protocol}://${req.get('host')}/home`);
 });
 
+app.disable('x-powered-by');
+
+app.use((req, res, next) => {
+    res.removeHeader("server");
+    
+    next();
+});
+
 
 module.exports = app;
