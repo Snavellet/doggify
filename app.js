@@ -30,4 +30,6 @@ app.all('*', (req, res) => {
 
 app.disable('x-powered-by');
 
+app.disable('server');
+
 module.exports = app;
