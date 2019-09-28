@@ -28,4 +28,6 @@ app.all('*', (req, res) => {
     return res.render('404');
 });
 
+app.disable('x-powered-by');
+
 module.exports = app;
